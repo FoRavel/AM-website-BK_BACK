@@ -21,4 +21,4 @@ app.get('/', (req, res) => {
 
 app.use('/api', productRouter)
 
-app.listen(apiPort, '0.0.0.0')
+app.listen(process.env.PORT || 5000)
