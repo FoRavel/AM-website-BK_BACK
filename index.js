@@ -21,4 +21,4 @@ app.get('/', (req, res) => {
 
 app.use('/api', productRouter)
 
-app.listen(apiPort, () => console.log(`Server running on port ${apiPort}`))
+app.listen(apiPort, '0.0.0.0')
